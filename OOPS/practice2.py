@@ -1,7 +1,20 @@
-
+import math
 class calculator:
-    def __calc__(self,n,sqrt):
+    @staticmethod
+    def greet():
+        print("hello")
+    def __init__(self,n):
         self.n=n
-        print("the square is: ",n*n,"\n the cube is :",n*n*n,"the square root is :",sqrt(n))
-n=int(input("enter n"))
-calcu=calculator(2,3)
+    def square(self):
+        print("the square is ",{self.n*self.n})
+    def square_root(self):
+        print("the square root is ",{self.n**1/2})
+    def cube(self):
+        print("the cube is ",{self.n*self.n*self.n})
+    
+calc=calculator(4)
+calc.greet()
+calc.square()
+calc.cube()
+calc.square_root()
+
